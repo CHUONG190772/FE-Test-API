@@ -1,8 +1,137 @@
 div{
   background-color: azure;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
 
 }
 table{
   font-style: italic;
 }
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6d5dfc, #46c2ff);
+  font-family: "Poppins", sans-serif;
+}
+
+.login-form {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 320px;
+  transition: transform 0.3s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-5px);
+}
+
+.login-form input {
+  width: 80%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #6d5dfc;
+  box-shadow: 0 0 5px rgba(109, 93, 252, 0.5);
+}
+
+.login-form button {
+  width: 50%;
+  padding: 10px;
+  background: linear-gradient(135deg, #6d5dfc, #46c2ff);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 200;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+  background: linear-gradient(135deg, #5a4ae3, #35b3f2);
+  box-shadow: 0 4px 12px rgba(70, 194, 255, 0.5);
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6d5dfc, #46c2ff);
+  font-family: "Poppins", sans-serif;
+}
+
+.register-form {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 360px;
+  transition: transform 0.3s ease;
+}
+
+.register-form:hover {
+  transform: translateY(-5px);
+}
+
+.register-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.register-form input {
+  width: 80%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.register-form input:focus {
+  border-color: #6d5dfc;
+  box-shadow: 0 0 5px rgba(109, 93, 252, 0.5);
+}
+
+.register-form button {
+  width: 50%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6d5dfc, #46c2ff);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.register-form button:hover {
+  background: linear-gradient(135deg, #5a4ae3, #35b3f2);
+  box-shadow: 0 4px 12px rgba(70, 194, 255, 0.5);
+}
+
+.register-form p {
+  margin-top: 15px;
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+}
+

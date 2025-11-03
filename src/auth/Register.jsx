@@ -24,47 +24,34 @@ export default function Register() {
   };
 
   return (
-    <div style={{ maxWidth: 420, margin: "0 auto" }}>
-      <h2>Đăng ký</h2>
-      <form onSubmit={handleSubmit}>
-        <div style={{ marginBottom: 8 }}>
-          <input
-            name="username"
-            placeholder="Username"
-            value={form.username}
-            onChange={handleChange}
-            style={{ width: "100%", padding: 8 }}
-            required
-          />
-        </div>
-        <div style={{ marginBottom: 8 }}>
-          <input
-            name="email"
-            type="email"
-            placeholder="Email"
-            value={form.email}
-            onChange={handleChange}
-            style={{ width: "100%", padding: 8 }}
-            required
-          />
-        </div>
-        <div style={{ marginBottom: 8 }}>
-          <input
-            name="password"
-            type="password"
-            placeholder="Password"
-            value={form.password}
-            onChange={handleChange}
-            style={{ width: "100%", padding: 8 }}
-            required
-          />
-        </div>
-        <div>
-          <button type="submit" style={{ padding: "8px 12px" }}>
-            Register
-          </button>
-        </div>
-        {msg && <p style={{ marginTop: 8 }}>{msg}</p>}
+    <div className="register-container">
+      <form className="register-form" onSubmit={handleSubmit}>
+        <h2>Register</h2>
+        <input
+          name="username"
+          placeholder="Username"
+          value={form.username}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="email"
+          type="email"
+          placeholder="Email"
+          value={form.email}
+          onChange={handleChange}
+          required
+        />
+        <input
+          name="password"
+          type="password"
+          placeholder="Password"
+          value={form.password}
+          onChange={handleChange}
+          required
+        />
+        <button type="submit">Register</button>
+        {msg && <p>{msg}</p>}
       </form>
     </div>
   );

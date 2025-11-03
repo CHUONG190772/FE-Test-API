@@ -19,8 +19,6 @@ export function AuthProvider({ children }) {
       localStorage.removeItem("token");
       localStorage.removeItem("user");
     }
-
-    // Không return gì cả → không có cleanup function => không lỗi "destroy"
   }, []);
 
   const login = async (username, password) => {
